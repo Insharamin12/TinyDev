@@ -1,0 +1,87 @@
+/* Welcome section */
+#welcome {
+  background: linear-gradient(to right top, #6305dd, #390281);
+  padding: 6rem 12%;
+  text-align: center; /* Center align content */
+}
+
+#welcome img {
+  width: 10rem;
+  height: 10rem;
+  border: 5px solid #fff; /* White border */
+  border-radius: 50%; /* Circular border */
+  background-color: #ffe1bf;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+#welcome h2 {
+  font-size: 3rem; /* Larger font size */
+  color: #fff; /* White text */
+  margin-top: 1rem; /* Adjust spacing */
+}
+
+#welcome p {
+  color: #fff; /* White text */
+  font-size: 1.25rem; /* Medium font size */
+}
+
+/* Latest posts section */
+#latest-posts {
+  background-color: #fff; /* White background */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 800px; /* Limit maximum width */
+}
+
+#latest-posts h2 {
+  font-size: 2.5rem; /* Larger font size */
+  margin-bottom: 2rem; /* Adjust spacing */
+}
+
+#latest-posts ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#latest-posts li {
+  margin-bottom: 1rem; /* Adjust spacing between posts */
+}
+
+
+#about {
+  text-align: center;
+  padding: 3rem;
+  background-color: #f8f9fa; /* Light gray background */
+  margin-top: 5rem;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  color: #333; /* Dark gray text */
+  margin-bottom: 1.5rem;
+}
+
+#about p {
+  font-size: 1.25rem;
+  color: #333; /* Dark gray text */
+  margin-bottom: 2rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.social-links a {
+  margin: 0 1.5rem; /* Increased margin for better spacing */
+  color: #333; /* Dark gray text */
+  font-size: 2.5rem; /* Increased font size */
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #007bff; /* Blue on hover */
+}

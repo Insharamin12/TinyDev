@@ -1,0 +1,67 @@
+{% extends "base.html" %} 
+{% load static %}
+
+{% block title %} 
+My Blog 
+{% endblock %} 
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static "blog/post.css" %}" />
+  <link rel="stylesheet" href="{% static "blog/index.css" %}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+{% endblock %}
+
+{% block content %}
+<section id="welcome">
+  <header>
+    <img src="{% static "blog/images/insha.png" %}" alt="Insha - The Author Of This Blog" />
+    <h2>Tech with Insha</h2>
+  </header>
+  <p> Hey there, I'm Insha—a backend developer with a knack for Python, Django, PostgreSQL, and Rest API. </p>
+   <p>With a solid foundation in backend technologies, I'm currently diving deep into new projects, crafting innovative solutions, and flying under the radar.</p>
+    <br>
+     
+</section>
+
+<section id="latest-posts">
+  <h2> Latest Writeups</h2>
+
+  <ul>
+    {% for post in posts %}
+      {% include "blog/includes/post.html" %}
+    {% endfor %}
+  </ul>
+</section>
+
+<!-- <section id="about">
+  <h2>Let's conmnect</h2>
+  <p>
+    I love programming, I love to help others and I enjoy exploring new
+    technologies in general!
+  </p>
+  <p>
+    My goal is to keep on growing as a developer - and if I could help you do
+    the same, I'd be very happy!
+  </p>
+</section> -->
+
+<section id="about">
+  <h2>Let's Connect</h2>
+  <p>
+    Connect with me on social media to stay updated with my latest posts and projects!
+  </p>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/insha-ramin" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://twitter.com/Insharamin" target="_blank">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://medium.com/@insharamin" target="_blank">
+      <i class="fab fa-medium"></i>
+    </a>
+  </div>
+</section>
+
+{% endblock %}
